@@ -1,0 +1,59 @@
+
+body {
+  font-family: system-ui, sans-serif;
+  background: #1f2430;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 24px 12px;
+}
+
+.hint { color: #aab; margin-bottom: 32px; }
+
+/* Keys sit side by side */
+.piano {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+}
+
+.key {
+  width: 60px;
+  height: 200px;
+  background: white;
+  color: #222;
+  border: 1px solid #999;
+  border-radius: 6px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 4px;
+  padding-bottom: 14px;
+  box-shadow: 0 5px 0 #bbb;
+  transition: background 0.05s, transform 0.05s;
+}
+
+.key .note { font-size: 1.4rem; font-weight: 700; }
+.key .solfege { font-size: 0.85rem; color: #666; }
+kbd {
+  margin-top: 6px;
+  padding: 2px 8px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  background: #f0f0f0;
+  font-size: 0.9rem;
+}
+
+/* Pressed look */
+.key.active {
+  background: gold;
+  transform: translateY(3px);
+  box-shadow: 0 2px 0 #b8960b;
+}
+
+@media (max-width: 560px) {
+  .key { width: 10.5vw; height: 150px; }
+  .key .note { font-size: 1rem; }
+  .key .solfege { font-size: 0.65rem; }
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Keyboard Piano</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>My Keyboard Piano</h1>
+  <p class="hint">Press A S D F G H J K to play</p>
+
+  <!-- One .piano box holds 8 .key boxes. data-key stores each key's letter. -->
+  <div class="piano">
+    <div class="key" data-key="a"><span class="note">C</span><span class="solfege">Do</span><kbd>A</kbd></div>
+    <div class="key" data-key="s"><span class="note">D</span><span class="solfege">Re</span><kbd>S</kbd></div>
+    <div class="key" data-key="d"><span class="note">E</span><span class="solfege">Mi</span><kbd>D</kbd></div>
+    <div class="key" data-key="f"><span class="note">F</span><span class="solfege">Fa</span><kbd>F</kbd></div>
+    <div class="key" data-key="g"><span class="note">G</span><span class="solfege">Sol</span><kbd>G</kbd></div>
+    <div class="key" data-key="h"><span class="note">A</span><span class="solfege">La</span><kbd>H</kbd></div>
+    <div class="key" data-key="j"><span class="note">B</span><span class="solfege">Ti</span><kbd>J</kbd></div>
+    <div class="key" data-key="k"><span class="note">C</span><span class="solfege">Do</span><kbd>K</kbd></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
